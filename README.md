@@ -15,3 +15,6 @@ So far, here are the option available:
   
 # Live demo
 Se [http://interstices.io/repertoire/](http://interstices.io/repertoire/) for a list or ressources about alternatives, autonomy, politic, etc build in a Framapad.
+
+# Styling
+padList2htmlList uses [Stylus](http://learnboost.github.io/stylus/) to compile CSS.
