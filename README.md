@@ -8,9 +8,9 @@ In `index.php`, replace the variable `$padUrl` by the url of your pad:
 # Pad syntax
 So far, here are the option available:
   ```
-  ############################################### -> Delete everything before
-  --------------------text here-------------------- -> If centered in the page and "code" style = first level menu / if left aligned and bold style = second level menu
-  ====2==== and ==2.1== -> (first line after precedent information) associate first level menu with second level menu`  
+  ############################################### -> Delete everything before  
+  --------------------text here-------------------- -> If centered in the page and "code" style = first level menu / if left aligned and bold style = second level menu  
+  ====2==== and ==2.1== -> (first line after precedent information) associate first level menu with second level menu`   
   italic style, bold style and urls can be associated with particular style
   ```
 # Live demo
