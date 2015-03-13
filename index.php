@@ -25,7 +25,7 @@
     ini_set('display_errors', 'On');
 
     //récupérer le contenu du framapad
-    $padUrl = "https://lite4.framapad.org/p/TINnJCRskT";
+    $padUrl = "http://urlDu/Framapad";
     $datas = file_get_contents($padUrl.'/export/html');
 
     // Récupérer les catégories
@@ -33,14 +33,6 @@
     preg_match_all("/\<code style=\"font-family: monospace\"\>(.*?)\<\/code>/", $datas, $bigCats);
     preg_match_all("/====(.*?)====/", $datas, $bigCatsNb);
     preg_match_all("/====(.*?)====(.*?)====(.*?)====/", $datas, $contents);
-
-/*    foreach ($contents as $contents){
-      foreach ($contents as $content){
-        echo '<h1> ezjiospghiuerqhgkljre </h1>';
-        echo $content;
-      }
-    }
-*/
 
     echo '<div class="menu">';
       echo '<h1>Répertoire&thinsp;: </h1>';
@@ -104,24 +96,6 @@
     $datasOK = str_replace(">https:&#x2F;&#x2F;", ">", $datasOK);
     $datasOK = str_replace(">www.", ">", $datasOK);
 
-//    $datasOK = str_replace("><br>", "</p></p>", $datasOK);
-
-    // Traitement des langues
-    /*
-    preg_match_all("/\((.*?)\)/", $datasOK, $langues);
-    //print_r ($langues);
-    $isFirst = true;
-    foreach ($langues as $langue){
-      if ($isFirst) {
-        $isFirst = false;
-        continue;
-      }
-      echo '<h1>ofienzkljn</h1>';
-      foreach($langue as $langue){
-        echo '<sup>'.$langue.'</sup>';
-      }
-    }
-    */
     echo '<div class="content">';
       echo $datasOK;
     echo '</div>';
