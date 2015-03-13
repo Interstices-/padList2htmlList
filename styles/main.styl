@@ -1,0 +1,89 @@
+@import url("fonts/librebaskerville/stylesheet.css");
+@import url("fonts/youngserif/stylesheet.css");
+@import url("fonts/inknut/stylesheet.css");
+@import url("fonts/oldstandard/stylesheet.css");
+@import url('http://fonts.googleapis.com/css?family=Fira+Sans:400,300italic,300,400italic,500,500italic,700,700italic&subset=latin,latin-ext')
+
+colo = #780000
+
+body
+  font-size 22px
+  line-height 38px
+  font-family 'Fira Sans'
+  font-weight 500
+  margin-top 30px
+  margin-left 60px
+  margin-right 240px
+  vertical-align baseline
+  a, i, em
+    font-weight normal
+    font-style normal
+    //font-family 'libre_baskervilleitalic'
+  h1
+    font-weight normal
+    font-style normal
+  i, em
+    font-family 'Fira Sans'
+    font-style italic
+  a
+    color colo
+  .content
+    a
+      max-width 30%
+      overflow hidden
+      text-overflow '…'
+      white-space nowrap
+      display inline-block
+      vertical-align bottom
+      margin-bottom -2px
+      text-decoration none
+      font-family 'old_standard_ttitalic'
+      &:hover
+        text-decoration underline
+  ul
+    margin 0
+    padding 0
+    li
+      margin 0
+      padding 0
+      list-style none
+  strong, center
+    //display none
+  .menu
+    position fixed
+    top 0
+    padding-top 10px
+    padding-bottom 15px
+    left 20px
+    background white
+    width 100%
+    font-size 32px
+    font-family 'Fira Sans'
+    z-index 1000
+    .pourquoi
+      font-family 'Fira Sans'
+      position absolute
+      right 40px
+      &:hover
+        font-style italic
+        &:before
+          content "Pourquoi"
+    h1
+      font-size 32px
+      display inline
+    ul
+      display inline-block
+      vertical-align top
+      max-height 400px
+      overflow auto
+      li
+        font-family 'Fira Sans'
+        font-weight normal
+        color colo
+        span, a
+          text-decoration none
+        span:hover, a:hover
+          border-bottom 2px solid colo
+          cursor s-resize
+      li:after
+        content '↓'

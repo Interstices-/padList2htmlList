@@ -1,0 +1,106 @@
+@import url("fonts/librebaskerville/stylesheet.css");
+@import url("fonts/youngserif/stylesheet.css");
+@import url("fonts/inknut/stylesheet.css");
+@import url("fonts/oldstandard/stylesheet.css");
+@import url("http://fonts.googleapis.com/css?family=Fira+Sans:400,300italic,300,400italic,500,500italic,700,700italic&subset=latin,latin-ext");
+body {
+  font-size: 22px;
+  line-height: 38px;
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 240px;
+  vertical-align: baseline;
+}
+body a,
+body i,
+body em {
+  font-weight: normal;
+  font-style: normal;
+}
+body h1 {
+  font-weight: normal;
+  font-style: normal;
+}
+body i,
+body em {
+  font-family: 'Fira Sans';
+  font-style: italic;
+}
+body a {
+  color: #780000;
+}
+body .content a {
+  max-width: 30%;
+  overflow: hidden;
+  text-overflow: '…';
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: -2px;
+  text-decoration: none;
+  font-family: 'old_standard_ttitalic';
+}
+body .content a:hover {
+  text-decoration: underline;
+}
+body ul {
+  margin: 0;
+  padding: 0;
+}
+body ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body .menu {
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  left: 20px;
+  background: #fff;
+  width: 100%;
+  font-size: 32px;
+  font-family: 'Fira Sans';
+  z-index: 1000;
+}
+body .menu .pourquoi {
+  font-family: 'Fira Sans';
+  position: absolute;
+  right: 40px;
+}
+body .menu .pourquoi:hover {
+  font-style: italic;
+}
+body .menu .pourquoi:hover:before {
+  content: "Pourquoi";
+}
+body .menu h1 {
+  font-size: 32px;
+  display: inline;
+}
+body .menu ul {
+  display: inline-block;
+  vertical-align: top;
+  max-height: 400px;
+  overflow: auto;
+}
+body .menu ul li {
+  font-family: 'Fira Sans';
+  font-weight: normal;
+  color: #780000;
+}
+body .menu ul li span,
+body .menu ul li a {
+  text-decoration: none;
+}
+body .menu ul li span:hover,
+body .menu ul li a:hover {
+  border-bottom: 2px solid #780000;
+  cursor: s-resize;
+}
+body .menu ul li:after {
+  content: '↓';
+}
