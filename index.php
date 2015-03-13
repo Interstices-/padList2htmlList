@@ -25,7 +25,7 @@
     ini_set('display_errors', 'On');
 
     //récupérer le contenu du framapad
-    $padUrl = "http://urlDu/Framapad";
+    $padUrl = "https://lite6.framapad.org/p/JcA306Aere";
     $datas = file_get_contents($padUrl.'/export/html');
 
     // Récupérer les catégories
