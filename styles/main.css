@@ -4,21 +4,18 @@
 @import url("fonts/oldstandard/stylesheet.css");
 @import url("http://fonts.googleapis.com/css?family=Fira+Sans:400,300italic,300,400italic,500,500italic,700,700italic&subset=latin,latin-ext");
 body {
-  font-size: 22px;
-  line-height: 38px;
+  color: #970000;
+  font-size: 20px;
+  line-height: 31px;
   font-family: 'Fira Sans';
-  font-weight: 500;
   margin-top: 30px;
-  margin-left: 60px;
-  margin-right: 240px;
+  margin-left: 20px;
+  margin-right: 20px;
   vertical-align: baseline;
 }
 body a,
 body i,
-body em {
-  font-weight: normal;
-  font-style: normal;
-}
+body em,
 body h1 {
   font-weight: normal;
   font-style: normal;
@@ -27,9 +24,14 @@ body i,
 body em {
   font-family: 'Fira Sans';
   font-style: italic;
+  font-weight: 300;
 }
 body a {
-  color: #780000;
+  color: #0030a2;
+}
+body .content {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 body .content a {
   max-width: 30%;
@@ -54,53 +56,103 @@ body ul li {
   padding: 0;
   list-style: none;
 }
+body .menuHome,
 body .menu {
-  position: fixed;
+  position: absolute;
   top: 0;
-  padding-top: 10px;
-  padding-bottom: 15px;
   left: 20px;
+  right: 20px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   background: #fff;
-  width: 100%;
-  font-size: 32px;
+  font-size: 28px;
   font-family: 'Fira Sans';
   z-index: 1000;
 }
+body .menuHome .pourquoi,
 body .menu .pourquoi {
   font-family: 'Fira Sans';
   position: absolute;
-  right: 40px;
+  right: 0px;
+  text-decoration: none;
 }
+body .menuHome .pourquoi:hover,
 body .menu .pourquoi:hover {
   font-style: italic;
 }
+body .menuHome .pourquoi:hover:before,
 body .menu .pourquoi:hover:before {
   content: "Pourquoi";
 }
+body .menuHome h1,
 body .menu h1 {
   font-size: 32px;
   display: inline;
 }
+body .menuHome h1 a,
+body .menu h1 a {
+  color: #970000;
+  text-decoration: none;
+}
+body .menuHome h1 a:hover,
+body .menu h1 a:hover {
+  color: #0030a2;
+}
+body .menuHome ul,
 body .menu ul {
   display: inline-block;
   vertical-align: top;
-  max-height: 400px;
-  overflow: auto;
+  max-width: 79%;
 }
+body .menuHome ul li,
 body .menu ul li {
   font-family: 'Fira Sans';
-  font-weight: normal;
-  color: #780000;
+  color: #0030a2;
 }
+body .menuHome ul li span,
 body .menu ul li span,
+body .menuHome ul li a,
 body .menu ul li a {
   text-decoration: none;
 }
-body .menu ul li span:hover,
+body .menuHome ul li a:hover,
 body .menu ul li a:hover {
-  border-bottom: 2px solid #780000;
-  cursor: s-resize;
+  border-bottom: 2px solid #0030a2;
 }
-body .menu ul li:after {
+body .menuHome ul ul,
+body .menu ul ul {
+  margin-left: 50px;
+}
+body .menuHome .bigCat a,
+body .menu .bigCat a {
+  font-style: bold;
+  font-weight: 500;
+}
+body .menuHome .sousCat a,
+body .menu .sousCat a {
+  font-weight: normal;
+  font-style: normal;
+  text-transform: lowercase;
+}
+body .menu {
+  position: fixed;
+  width: 100%;
+}
+body .menu ul {
+  max-height: 450px;
+  max-width: 35%;
+  overflow-y: auto;
+  padding-bottom: 15px;
+}
+body .menu ul .current:after {
   content: '↓';
+}
+body .menu ul .current:hover {
+  cursor: s-resize;
+  border-bottom: 2px solid #0030a2;
+}
+body .menu .bigCat a {
+  font-weight: normal;
+  font-style: normal;
+  text-transform: lowercase;
 }

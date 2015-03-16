@@ -9,7 +9,8 @@ In `index.php`, replace the variable `$padUrl` by the url of your pad:
 So far, here are the option available:  
   `###############################################` -> Delete everything before  
   `--------------------text here--------------------` -> If centered in the page and "code" style = first level menu / if left aligned and bold style = second level menu / if no style = hide content  
-  `====2====` and `==2.1==` -> (first line after precedent information) associate first level menu with second level menu`   
+  `%%%%%%%%%%` -> associate content with first level menu  
+  `**********`  -> associate with second level menu  
 
   Italic style, bold style and urls can be associated with particular style
   
